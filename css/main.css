@@ -12,7 +12,7 @@
 	box-shadow: 20px 20px 20px #ffff00,
 							-20px -20px 20px #0066ff;
 }
-input{
+#quantity{
 	width: 100%;
 	margin-bottom: 50px;
 	text-align: center;
@@ -43,4 +43,10 @@ input{
 	padding-top: 30px;
 	font-size: 30px;
 	text-shadow: 2px 2px 2px black;
+}
+#block-time{
+	display: none;
+}
+#block-distance{
+	display: none;
 }

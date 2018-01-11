@@ -19,26 +19,52 @@
 <body>
 	<div class="container">
 		<div class="block">
-			<input type="text" value="Час" disabled><br>
-			<div class="cont">
-				<select name="sel1" id="sel1">
+			<select name="quantity" id="quantity">
 					<option value="">Виберіть</option>
-					<option value="hour">Година</option>
-					<option value="minute">Хвилина</option>
-					<option value="second">Секунда</option>
+					<option value="time">Час</option>
+					<option value="distance">Відстань</option>
 				</select>
-				<select name="sel2" id="sel2" disabled>
-					<option value="">Не вибрано</option>
-					<option value="hour">Годин</option>
-					<option value="minute">Хвилин</option>
-					<option value="second">Секунд</option>
-					<option value="milisecond">Мілісекунд</option>
-				</select>
+			<div id="block-time">
+				<div class="cont">
+					<select name="sel1" id="selTime1">
+						<option value="">Виберіть</option>
+						<option value="hour">Година</option>
+						<option value="minute">Хвилина</option>
+						<option value="second">Секунда</option>
+					</select>
+					<select name="sel2" id="selTime2" disabled>
+						<option value="">Не вибрано</option>
+						<option value="hour">Годин</option>
+						<option value="minute">Хвилин</option>
+						<option value="second">Секунд</option>
+						<option value="milisecond">Мілісекунд</option>
+					</select>
+				</div>
+				<div class="display">
+					<span id="dispTime1"></span>
+					<span id="dispTime2"></span>
+				</div>
 			</div>
-			<div class="display">
-				<span id="disp1"></span>
-				<span id="disp2"></span>
-			</div>
+			<div id="block-distance">
+				<div class="cont">
+					<select name="sel1" id="selDistance1">
+						<option value="">Виберіть</option>
+						<option value="kilometer">Кілометр</option>
+						<option value="meter">Метр</option>
+						<option value="centimeter">Сантиметр</option>
+					</select>
+					<select name="sel2" id="selDistance2" disabled>
+						<option value="">Не вибрано</option>
+						<option value="meter">Метрів</option>
+						<option value="centimeter">Сантиметрів</option>
+						<option value="millimetre">Міліметрів</option>
+					</select>
+				</div>
+				<div class="display">
+					<span id="dispDistance1"></span>
+					<span id="dispDistance2"></span>
+				</div>
+			</div>	
 		</div>
 	</div>
 	
